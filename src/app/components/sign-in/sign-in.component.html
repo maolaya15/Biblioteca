@@ -1,0 +1,36 @@
+
+    <div class="vertical">    
+      <div id="main-box">        
+        <div class="text-center" style="align-items: center;">
+          <h2>Ingresar</h2>
+          <div class="formGroup">
+            <input type="text" class="form-control" placeholder="Usuario" #userName required>
+          </div>
+          <br/>
+          <div class="formGroup">
+            <input type="password" class="form-control" placeholder="Contraseña" #userPassword required>
+          </div>
+          <br/>          
+        </div>
+        <div>
+          <div class="formGroup" style="margin-left: 100px; margin-right: 100px;">
+            <input type="button" class="btn btn-primary btn-block " value="Ingresar"
+              (click)="ngAuthService.SignIn(userName.value, userPassword.value)">
+          </div>
+          <br/>
+          <div class="formGroup" style="margin-left: 100px; margin-right: 100px;">
+            <button type="button" class="btn btn-danger btn-block" (click)="ngAuthService.GoogleAuth()">
+              Ingresar con Google
+            </button>
+          </div>
+          <br/>
+        </div>
+        <div class="forgotPassword">
+            <span routerLink="/forgot-password">¿Olvidó su Contraseña?</span>
+        </div>
+        <div class="redirectToLogin">
+          <span>Aún no se ha registrado?<span class="redirect" routerLink="/sign-up">Regisrar</span></span>
+        </div>      
+    </div>    
+  </div>
+ 

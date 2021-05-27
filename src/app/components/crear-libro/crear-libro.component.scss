@@ -1,0 +1,38 @@
+.vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  #main-box {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+      height: 80vh;
+      padding: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 70vw;
+      overflow: auto;
+    }  
+  #contents {
+    width: 60%;
+  }
+  
+    /* HEADER */
+  .header {
+      align-items: center;
+      align-content: center;
+    }
+  
+  #welcome {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--poppins-font);
+    height: 75%;
+    justify-content: space-between;
+  }
+  

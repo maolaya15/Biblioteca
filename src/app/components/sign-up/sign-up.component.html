@@ -1,0 +1,32 @@
+<div class="vertical">
+  <div id="main-box">
+
+    <div class="text-center" style="align-items: center;">
+      <h2><strong>Registrar Usuario</strong> </h2>
+
+      <div class="formGroup" style="margin-bottom: 20px;">
+        <input type="email" class="form-control" placeholder="Correo" #userEmail required>
+      </div>
+
+      <div class="formGroup">
+        <input type="password" class="form-control" placeholder="Contraseña" #userPwd required>
+      </div>
+
+      <div class="formGroup" style="align-items: center; margin-top: 20px; margin-left: 100px; margin-right: 100px;">
+        <input type="button" class="btn btn-block btn-primary" value="Ingresar"
+          (click)="ngAuthService.SignUp(userEmail.value, userPwd.value)">
+      </div>
+      <br/>
+      <div class="formGroup" style="align-items: center; margin-left: 100px; margin-right: 100px;">
+        <button type="button" class="btn btn-block btn-danger" (click)="ngAuthService.GoogleAuth()">
+          Continuar con Google
+        </button>
+      </div>
+    </div>
+    <br/>
+    <div class="redirectToLogin">
+      <span>¿Aún no tiene una cuenta? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+    </div>
+  </div>
+
+</div>

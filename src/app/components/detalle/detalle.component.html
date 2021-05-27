@@ -1,0 +1,42 @@
+<div class="container" style="min-height: 400px">    
+    <div class="vertical">
+        <div id="main-box">
+            <header>
+                <h2><strong>{{book.titulo}}</strong></h2>
+                <br/>
+            </header>
+            <main id="welcome">
+                <div id="contents">
+                    <h4><strong>Autor: </strong> {{book.autor}}</h4>
+                    <h4><strong>Tema: </strong> {{book.tema}}</h4>
+                    <h4><strong>Edición: </strong> {{book.edicion}}</h4>
+                    <h4><strong>Descripción: </strong> {{book.descripcion}}</h4>
+                    <div style="overflow: auto;">
+                        <p>
+                            {{book.resumen}}
+                        </p>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-5">
+                            <div class="d-flex justify-content-between w-100 position-relative top-40-percent">
+                                <button (click)="delBook()" class="btn btn-danger m-1">
+                                    Eliminar
+                                </button>
+                                <button class="btn btn-primary m-1" (click)="editBook()">
+                                    Editar
+                                </button>
+                            </div>
+                            
+                        </div>                            
+                    </div>                                     
+
+                </div>
+                <img id="book-image" [src]="book.imagen" alt="Imagen del libro" />
+            </main>
+
+            <button type="button" (click)="regresar()" class="btn btn-secondary mt-2 m-1 btn-sm">Regresar a la lista</button>
+        </div>
+    </div>>
+
+</div>

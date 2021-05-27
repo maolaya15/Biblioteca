@@ -1,0 +1,31 @@
+.btn-primary{
+    background-color: rgba(192, 135, 49, 0.596);
+    border: rgb(235, 178, 140);
+    color: #000;
+
+}
+
+.alignCenter {
+    text-align: center;
+  }
+
+#main-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    height: 70vh;
+    padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 40vw;   
+    flex-direction: column;
+  }
+
+  .vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  
